@@ -1,0 +1,83 @@
+[
+    {
+      "id": 1,
+      "image": "../public/saitama.png",
+      "clicked": false
+    },
+    {
+      "id": 2,
+      "image": "../public/avdol.jpg",
+      "clicked": false
+    },
+    {
+      "id": 3,
+      "image": "../public/bang.png",
+      "clicked": false
+    },
+    {
+      "id": 4,
+      "image": "../public/chrollo.jpg",
+      "clicked": false
+    },
+    {
+      "id": 5,
+      "image": "../public/edward.jpg",
+      "clicked": false
+    },
+    {
+      "id": 6,
+      "image": "../public/eraser.png",
+      "clicked": false
+    },
+    {
+      "id": 7,
+      "image": "../public/genos.png",
+      "clicked": false
+    },
+    {
+      "id": 8,
+      "image": "../public/gon.png",
+      "clicked": false
+    },
+    {
+      "id": 9,
+      "image": "../public/hisoka.jpg",
+      "clicked": false
+    },
+    {
+      "id": 10,
+      "image": "../public/jack.png",
+      "clicked": false
+    },
+    {
+      "id": 11,
+      "image": "../public/joe.png",
+      "clicked": false
+    },
+    {
+      "id": 12,
+      "image": "../public/jotaro.jpg",
+      "clicked": false
+    },
+    {
+      "id": 13,
+      "image": "../public/koyama.png",
+      "clicked": false
+    },
+    {
+      "id": 14,
+      "image": "../public/kuroku.png",
+      "clicked": false
+    },
+    {
+      "id": 15,
+      "image": "../public/luffy.jpg",
+      "clicked": false
+    },
+    {
+      "id": 16,
+      "image": "../public/uvogin.png",
+      "clicked": false
+    }
+]
+  

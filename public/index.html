@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root">
+      <nav class="navbar">
+        <ul>
+          <li class="brand">
+            <a href="/">Clicky Game</a>
+
+          </li>
+          <li>You guessed incorrectly</li>
+          <li>
+            "Score: "
+            "0"
+            " | Top Score: "
+            "1"
+          </li>
+        </ul>
+      </nav>
+
+
+      <header class="header">
+        <h1>Clicky Game!</h1>
+        <h2>Click on an image to earn points, but don't click on any more than once!</h2>
+
+      </header>
+
+      <main class="container">
+          <div role="img" aria-label="click item" 
+          class="click-item shake" style="background-image: url(&quot;/assets/images/jerry.png&quot;);">
+        </div>
+
+      </main>
+
+      <footer class="footer">
+        <div class="bottom">
+          "Clicky Game!"
+          <img alt="react" src="favicon.ico">
+        </div>
+
+      </footer>
+
+    </div>
+   
+  </body>
+</html>
