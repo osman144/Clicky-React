@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import FriendCard from "./components/FriendCard";
 import Wrapper from "./components/Wrapper";
 import Nav from "./components/Nav";
-// import GameInstructions from "./components/GameInstructions";
+import Title from "./components/Title";
+import Container from "./components/Container"
 import friends from "./friends.json";
 import './App.css';
 
@@ -17,6 +18,10 @@ class App extends Component {
     return (
       <Wrapper>
         <Nav>Friend's List</Nav>
+        <Title>Click on an image to earn points, but don't click on any more than once </Title>
+
+        <Container>
+        <Main>
         {this.state.friends.map(friend => (
           <FriendCard
             id={friend.id}
@@ -25,6 +30,8 @@ class App extends Component {
           
           />
         ))}
+        </Main>
+        </Container>
       </Wrapper>
 
     )
