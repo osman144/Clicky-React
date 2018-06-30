@@ -1,5 +1,5 @@
 .navbar {
-    background: #2431e4;
+    background: #02031379;
     min-height: 70px;
     position: fixed;
     width: 100%;
@@ -16,9 +16,9 @@
 }
 
 .navbar li {
-    display: inline-block;
-    padding: 26px 0;
-    width: 33%;
+    /* display: inline-block; */
+    /* padding: 26px 0;
+    width: 33%; */
     text-align: center;
 }
 

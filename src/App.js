@@ -9,18 +9,27 @@ import Row from './components/Row'
 import friends from "./friends.json";
 import './App.css';
 
+function cardShuffled(array){
+  for (let i = array.length - 1; i > 0; i--) {
+    let j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+  return array;
+}
+
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
     friends: friends,
     currentScore:0,
     topScore:0,
-    clicked:[]
+    clicked:[],
+    wrong:''
   };
 
   gameClick = id => {
     if(this.state.clicked.indexOf(id) === -1){
-      this.handleIncrement();
+      this.scoreIncrement();
       this.setState({ clicked: this.state.clicked.concat(id)});
     } else {
       this.handleReset()
@@ -57,7 +66,7 @@ class App extends Component {
   }
 
   shuffleCards = () => {
-    let cardShuffle = cardShuffle(friends);
+    let cardShuffle = cardShuffled(friends);
     this.setState({friends:cardShuffle})
   };
 
