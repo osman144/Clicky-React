@@ -35,6 +35,13 @@
   /* Shake */
 
 .shake{
-  animation: shake .5s .0125s;
+  animation-name: shake;
+  animation-duration: 0.5s;
+  animation-timing-function: initial;
+  animation-delay: 0.0125s;
+  animation-iteration-count: initial;
+  animation-direction: initial;
+  animation-fill-mode: initial;
+  animation-play-state: initial;
 }
   

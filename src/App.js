@@ -16,11 +16,10 @@ function cardShuffled(array){
   }
   return array;
 }
-
 class App extends Component {
   // Setting this.state.friends to the friends json array
   state = {
-    friends: friends,
+    friends,
     currentScore:0,
     topScore:0,
     clicked:[],
@@ -32,16 +31,15 @@ class App extends Component {
       this.scoreIncrement();
       this.setState({ clicked: this.state.clicked.concat(id)});
     } else {
-      this.handleReset()
+      this.gameReset()
     }
 
   }
 
   gameReset = () =>{
     this.setState({
-      friends,
       currentScore:0,
-      topScore: this.state.currentScore,
+      topScore: this.state.topScore,
       wrong: 'Nani?!',
       clicked: [],
 
@@ -51,7 +49,7 @@ class App extends Component {
 
   scoreIncrement = () => {
     const newScore = this.state.currentScore + 1;
-    this.state({
+    this.setState({
       currentScore:newScore,
       wrong:''
     });
@@ -96,10 +94,11 @@ class App extends Component {
               key={friend.id}
               id={friend.id}
               image={friend.image}
-              gameClick={this.gameClick}
-              scoreIncrement={this.handleIncrement}
-              gameReset={this.gameReset}
-              shuffleCards={this.shuffleCards}
+              onClick = {this.gameClick}
+              shuffle = {this.shuffleCards}
+              incrementer = {this.scoreIncrement}
+              resetGame = {this.gameReset}
+
 
             
             />
