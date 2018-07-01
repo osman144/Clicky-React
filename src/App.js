@@ -17,6 +17,9 @@ function cardShuffled(array){
   return array;
 }
 class App extends Component {
+  componentDidMount() {
+    this.shuffleCards();
+  }
   // Setting this.state.friends to the friends json array
   state = {
     friends,
